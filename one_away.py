@@ -31,16 +31,19 @@ def one_edit_away(str1, str2):
     for key in freq_dict.keys():
         total += freq_dict[key]
         
-    if total < -1 or total > 1:
+    print freq_dict
+    
+    if total < -2 or total > 2:
         return False
     return True
         
 
 
-print one_edit_away("abbaa", "abbaas")
-print one_edit_away("a", "")
-print one_edit_away("lex", "alex")
-print one_edit_away("aste", "baes")
-print one_edit_away("aes", "baes")
+print one_edit_away("pale", "ple")
+print one_edit_away("pales", "pale")
+print one_edit_away("pale", "bale")
+print one_edit_away("bake", "pale")
+
+
 
 
